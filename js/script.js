@@ -23,5 +23,7 @@ $(document).ready(function() {
     const number2 = parseInt($("#add2").val());
     const result = add(number1, number2);
     $("#output").text(result);
+    const beverage = $("#beverage").val();
+    $("#selectorOP").text(beverage);
   });  
 });
