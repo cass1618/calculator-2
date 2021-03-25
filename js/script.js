@@ -17,15 +17,12 @@ function divide(number1, number2) {
 
 // USER INTERFACE LOGIC
 $(document).ready(function() {
-  $("form#add").submit(function(event) {
+  $("form#calculator").submit(function(event) {
     event.preventDefault();
-    const number1 = parseInt($("#add1").val());
-    const number2 = parseInt($("#add2").val());
+    const number1 = parseInt($("#input1").val());
+    const number2 = parseInt($("#input2").val());
+    const operator = $("input:radio[name=operator]:checked").val();
     const result = add(number1, number2);
     $("#output").text(result);
-    const beverage = $("#beverage").val();
-    $("#selectorOP").text(beverage);
-    const flavor = $("input:radio[name=flavor]:checked").val();
-    $("#radioOP").text(flavor);
   });  
 });
