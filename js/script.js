@@ -25,5 +25,7 @@ $(document).ready(function() {
     $("#output").text(result);
     const beverage = $("#beverage").val();
     $("#selectorOP").text(beverage);
+    const flavor = $("input:radio[name=flavor]:checked").val();
+    $("#radioOP").text(flavor);
   });  
 });

@@ -19,18 +19,29 @@
         <label for="add2">2nd number:</label>
         <input id="add2" class="form-control" type="text">
       </div>
-      <select class="form-control" id="beverage" required>
-        <option></option>
-        <option>Coffee</option>
-        <option>Tea</option>
-        <option>Kombucha</option>
-        <option>Water</option>
-      </select>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="add" checked>Add
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="subtract">Subtract
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="multiply">Multiply
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="operator" value="divide">Divide
+        </label>
+      </div>
       <button type="submit" class="btn">Add!</button>
     </form>
     <div class="col-1" id="output"></div>
-    <p>Beverage selection:</p>
-    <div class="col-1" id="selectorOP"></div>
   </div>
 </body>
 </html>
